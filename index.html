@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <style type="text/css">
+    html,body{
+      margin: 0;
+      height: 100%;
+    }
+    #head{
+      display: table;
+      background: black;
+      height: 10%;
+      min-height: 70px;
+      width: 100%;
+      background-image: url(http://climg.mukewang.com/59093e9c00016ce303000100.png);
+      background-repeat: no-repeat;
+      background-position: left,center;
+      background-size: 210px;
+      text-align: right;
+    }
+    #guild_div{
+      display: table-cell;
+      vertical-align: middle;
+      text-align: right;
+    }
+    .guild{
+      color: white;
+      margin: 22px;
+    }
+    
+    #container{
+      background: lightblue;
+      height: 80%;
+    }
+    
+    #foot{
+      display: table;
+      background: black;
+      height: 10%;
+      width: 100%;
+    }
+    #foot_div{
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+    }
+    .foot_guild{
+      color: white;
+      margin: 30px;
+    }
+    #left{
+
+      width: 40%;
+      height: 100%;
+      float: left;
+    }
+    #mid{
+      height: 100%;
+      display: inline-block;
+    }
+    #right{
+      width: 30%;
+      height: 100%;
+      float: right;
+      border-left-width: 8px;
+      border-left-style: solid;
+      border-left-color: orange;
+    }
+    #tb1{
+      border-spacing: 10px;
+      margin-left: 120px;
+    }
+    #tb2{
+      border-spacing: 10px;
+    }
+    .t1{
+      background-color: pink;
+    }
+    #h1_1{
+      margin-top: 50px;
+      margin-left: 115px;
+    }
+    #h1_2{
+      margin-top: 50px;
+      display: inline-block;
+    }
+    #h1_3{
+      margin-top: 50px;
+      margin-left: 70px;
+    }
+    #form{
+      margin-top: 30px;
+      margin-left: 70px;
+    }
+    .input{
+      border: 0;
+      width: 210px;
+      height: 35px;
+      font-size: 10px;
+    }
+    #in2{
+      margin-top: 20px;
+    }
+    #submit{
+      margin-top: 20px;
+      background: red;
+      width: 210px;
+      height: 35px;
+      color: white;
+      font-size: 20px;
+      font-weight: lighter;
+      border: 0;
+    }
+    a{
+      color: black;
+      text-decoration: none;
+      cursor: default;
+    }
+    a:hover{color: rgb(148,71,235);}
+  </style>
+</head>
+<body>
+  <header id="head">
+    <div id="guild_div">
+      <a class="guild" href="">课程</a>
+      <a class="guild" href="">职业路径</a>
+      <a class="guild" href="">实战</a>
+      <a class="guild" href="">猿问</a>
+      <a class="guild" href="">手记</a>
+    </div>
+  </header>
+
+  <div id="container">
+    <nav id="left">
+      <div>
+        <h1 id="h1_1">课程推荐</h1>
+        <table id="tb1">
+          <tr>
+            <td class="t1">职业路径</td>
+            <td><a href="">HTML5与CSS3实现动态网页</a></td>
+          </tr>
+          <tr>
+            <td class="t1">职业路径</td>
+            <td><a href="">零基础入门Android语法与界面</a></td>
+          </tr>
+          <tr>
+            <td class="t1">职业路径</td>
+            <td><a href="">IOS基础语法与常用控件</a></td>
+          </tr>
+          <tr>
+            <td class="t1">职业路径</td>
+            <td><a href="">PHP入门开发</a></td>
+          </tr>
+          <tr>
+            <td class="t1">职业路径</td>
+            <td><a href="">JAVA入门开发</a></td>
+          </tr>
+        </table>
+      </div>
+    </nav>
+    <aside id="right">
+      <h1 id="h1_3">登录</h1>
+      <form id="form">
+        <input class="input" id="in1" type="text" name="id" placeholder="请输入登录邮箱/手机号"><br>
+        <input class="input" id="in2" type="password" maxlength="16" name="key" placeholder="6-16位密码，区分大小写，不能用空格">
+        <br>
+        <button id="submit" type="submit">登录</button>
+      </form>
+    </aside>
+    <article id="mid">
+      <h1 id="h1_2">相关课程</h1>
+      <table id="tb2">
+        <tr>
+          <td>
+          <a href="">HTML</a>&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="">CSS</a>&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="">JavaScript</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+          <a class="tb2_2" href="">HTML5</a>&nbsp;&nbsp;&nbsp;&nbsp;
+          <a class="tb2_2" href="">CSS3</a>&nbsp;&nbsp;&nbsp;&nbsp;
+          <a class="tb2_2" href="">Jquery</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+          <a href="">移动端基础</a>&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="">移动端APP开发</a>
+          </td>
+        </tr>
+      </table>
+    </article>
+  </div>
+
+  <footer id="foot">
+    <div id="foot_div">
+      <a class="foot_guild" href="">网站首页</a>
+      <a class="foot_guild" href="">企业合作</a>
+      <a class="foot_guild" href="">人才招聘</a>
+      <a class="foot_guild" href="">联系我们</a>
+      <a class="foot_guild" href="">常见问题</a>
+      <a class="foot_guild" href="">友情链接</a>
+    </div>
+  </footer>
+</body>
+</html>
